@@ -24,7 +24,7 @@ push_job:
   stage: push_to_dockerhub
   script:
     - docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
-    - docker image tag node-app:latest $DOCKERHUB_USER/todo-app:latest
+    - docker image tag todo-app:latest $DOCKERHUB_USER/todo-app:latest
     - docker push $DOCKERHUB_USER/todo-app:latest
   tags:
     - dev
