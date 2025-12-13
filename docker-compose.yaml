@@ -5,3 +5,5 @@ services:
     ports: 
       - "8000:8000"
     volumes: ./store_data/db.sqlite3:/data/db.sqlite3
+
+    
